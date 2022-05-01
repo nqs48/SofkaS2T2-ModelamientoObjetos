@@ -126,4 +126,15 @@ $ java -jar 'hereNameFile'
 
 ---
 
+<!-- CONTACT -->
+## Collaborators
+```
+Nestor Quiroga Suarez
+Jr. Software Developer
+```
+- LinkedIn => [Nestor Quiroga Suárez](https://www.linkedin.com/in/nqs48/)
+
+
+Tutorial Link: [CONCURRENT MAIN CLASSES -- README.MD](https://github.com/nqs48/SofkaS2T2-ModelamientoObjetos/edit/main/src/Model/Exc2/README.MD)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
