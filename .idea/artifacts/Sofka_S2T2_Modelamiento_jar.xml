@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Sofka_S2T2_Modelamiento:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Sofka_S2T2_Modelamiento_jar</output-path>
+    <root id="archive" name="Sofka_S2T2_Modelamiento.jar">
+      <element id="module-output" name="Sofka_S2T2_Modelamiento" />
+    </root>
+  </artifact>
+</component>
