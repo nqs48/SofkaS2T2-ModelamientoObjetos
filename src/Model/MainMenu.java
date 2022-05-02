@@ -14,7 +14,7 @@ public class MainMenu {
         try{
             int user;
             System.out.println("\n\tPOO: OBJECTS MODELING | PRELOAD DATA"+separator);
-            System.out.println("> Do you want preload DATA?\n");
+            System.out.println("> Do you want preload data to: \n\n\tPLANETARY SYSTEM and FERRY CONTROL: Vehicles types ?\n");
             System.out.println("| 1. Yes: (1)");
             System.out.println("| 2. No: (2)");
             System.out.println("\nEnter the number of your process:"+separator);

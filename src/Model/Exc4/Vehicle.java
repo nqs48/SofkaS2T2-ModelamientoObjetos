@@ -28,6 +28,7 @@ public class Vehicle {
         return id;
     }
 
+
     public String getType() {
         return type;
     }
@@ -83,7 +84,7 @@ public class Vehicle {
     public void showInformation() {
         System.out.println("\n++++++++++++++ Id Vehicle: " + getId() +" ++++++++++++++" + "\n\tType: " + getType() + "\n\tNumber Passengers: " + getNumberPass() +
                 "\n\tDate: " + getRegistrationDate().getTime()+"\n\tcrew: " + isCrew()+
-                " seconds\n\tNumber Wheels: " + getNumberWheels() + "\n\tMedium Move: " + getMediumMove()+"\n");
+                " \n\tNumber Wheels: " + getNumberWheels() + "\n\tMedium Move: " + getMediumMove()+"\n");
         System.out.print("-----------------------------------------\n\n");
     }
 
