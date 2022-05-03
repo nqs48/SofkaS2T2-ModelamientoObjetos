@@ -3,12 +3,14 @@ package View;
 import Model.Exc1.*;
 import Model.Exc2.MenuExc2;
 import Model.Exc3.MenuExc3;
+import Model.Exc3.RandomNumbers;
 import Model.Exc4.*;
 import Model.Exc5.*;
 import Model.Exc6.DynamicArray;
 import Model.Exc6.MenuExc6;
 import Model.MainMenu;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -256,12 +258,21 @@ public class Main {
                     } while (userMainE2 != 3);
                 }
                 case 3 -> {
+                    RandomNumbers rn =new RandomNumbers();
+                    DecimalFormat df= new DecimalFormat("#.0");
                     do {
                         userMainE3 = menuExc3.printMainMenuEX3(separator);
                         switch (userMainE3) {
                             case 1 -> {
                                 System.out.println("\n\n\t\t\t\t+BUBBLE SORT" + separator);
                                 try {
+                                    System.out.println("\nEnter the list's size: ");
+                                    Scanner num = new Scanner(System.in);
+                                    int userSize = num.nextInt();
+                                    rn.setNumbers(userSize);
+                                    rn.randomGenerator();
+                                    rn.viewList(rn.getNumbers(), df,"Original List");
+                                    rn.viewList(rn.subbleSort(), df,"Sort List");
 
                                 } catch (InputMismatchException e) {
                                     System.out.println("\n\tIncorrect selection data, try again.\n\nError: \n" + e);

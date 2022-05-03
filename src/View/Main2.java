@@ -1,43 +1,44 @@
 package View;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.util.Vector;
 
 public class Main2 {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
+        DecimalFormat df= new DecimalFormat("#.00");
+        int n = 10;
+        float[] numbers = new float[n];
 
-        Vector<Integer> numbers = new Vector<>();
-
-
-        int first = Integer.parseInt(in.nextLine());
-
-         numbers.add(first);
-
-        int second = Integer.parseInt(in.nextLine());
-        numbers.add(second);
-
-        while (numbers.lastElement() != numbers.get(numbers.size() - 2)) {
-            int number = Integer.parseInt(in.nextLine());
-            numbers.add(number);
+        for(int i = 0; i < numbers.length; i++) {
+            numbers[i] = getRandomNumber(0, 100);
         }
 
-        for(int n: numbers) {
-            System.out.println(n);
+        for(int i = 0; i < numbers.length; i++) {
+            for(int j = i + 1; j < numbers.length; j++) {
+                if (numbers[i] > numbers[j]) {
+                    float aux = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = aux;
+                }
+            }
         }
 
 
+        for(int i = 0; i < numbers.length; i++) {
+            System.out.println(df.format(numbers[i]));
+        }
+    }
 
-
-
+    public static float getRandomNumber(float min, float max) {
+        return (float) (Math.random() * (max - min) + min);
     }
 
 
 
-
-
-
-
-
 }
+
+
+
+
