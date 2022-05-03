@@ -3,8 +3,17 @@ package Model.Exc2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Class MenuExc2 to show the menus
+ */
 public class MenuExc2 {
 
+    /**
+     * Prints the CONCURRENT MAIN CLASSES Menu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int printMainMenuEX2(String separator) {
         try {
             int user;
@@ -21,7 +30,4 @@ public class MenuExc2 {
             return 0;
         }
     }
-
-
-
 }

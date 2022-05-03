@@ -3,8 +3,17 @@ package Model.Exc3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Class MenuExc3 to show the menus
+ */
 public class MenuExc3 {
 
+    /**
+     * Prints the SORT ARRAY RANDOM Menu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int printMainMenuEX3(String separator) {
         try {
             int user;

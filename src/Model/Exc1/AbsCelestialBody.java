@@ -1,15 +1,45 @@
 package Model.Exc1;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Abstract class AbsCelestialBody
+ */
 public abstract class AbsCelestialBody {
+    /**
+     * CelestialBody's id
+     */
     private int id;
+
+    /**
+     * CelestialBody's name
+     */
     public String name;
+
+    /**
+     * CelestialBody's mass
+     */
     private double mass;
+
+    /**
+     * CelestialBody's density
+     */
     private double density;
+
+    /**
+     * CelestialBody's diameter
+     */
     private double diameter;
 
+    /**
+     * Constructor abstract class AbsCelestialBody
+     * @param id value to CelestialBody's id
+     * @param name value to CelestialBody's name
+     * @param mass value to CelestialBody's mass
+     * @param density value to CelestialBody's density
+     * @param diameter value to CelestialBody's diameter
+     */
     public AbsCelestialBody(int id, String name, double mass, double density, double diameter) {
         this.id = id;
         this.name = name;
@@ -18,36 +48,70 @@ public abstract class AbsCelestialBody {
         this.diameter = diameter;
     }
 
+    /**
+     *  Empty constructor abstract class AbsCelestialBody
+     */
     public AbsCelestialBody() {
     }
 
+    /**
+     * Gets the current CelestialBody's id
+     * @return returns the CelestialBody's id  type int
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets a new id to CelestialBody
+     * @param size Contains the new id to set, type int
+     */
     public void setId(int size) {
         this.id= size+1;
     }
 
+    /**
+     * Gets the current CelestialBody's name
+     * @return returns the CelestialBody's name type string
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Gets the current CelestialBody's mass
+     * @return returns the CelestialBody's mass type double
+     */
     public double getMass() {
         return mass;
     }
 
+    /**
+     * Gets the current CelestialBody's density
+     * @return returns the CelestialBody's density type double
+     */
     public double getDensity() {
         return density;
     }
 
+    /**
+     * Gets the current CelestialBody's diameter
+     * @return returns the CelestialBody's diameter type double
+     */
     public double getDiameter() {
         return diameter;
     }
 
+    /**
+     * Static method to show information
+     */
     public abstract void showInformation();
 
-
+    /**
+     * Receives the user information to create the entity
+     * @param type Contains the key to create the entity
+     * @return The new entity created
+     */
     public AbsCelestialBody requestData(String type) {
         System.out.println("\nEnter the "+ type+"s name: ");
         Scanner name = new Scanner(System.in);

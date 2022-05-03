@@ -3,8 +3,17 @@ package Model.Exc6;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Class MenuExc6 to show the menus
+ */
 public class MenuExc6 {
 
+    /**
+     * Prints the VECTOR: DYNAMIC ARRAY Menu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int printMainMenuEX6(String separator) {
         try {
             int user;
@@ -20,6 +29,5 @@ public class MenuExc6 {
             return 0;
         }
     }
-
 
 }

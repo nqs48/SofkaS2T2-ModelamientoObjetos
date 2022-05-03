@@ -3,10 +3,17 @@ package Model.Exc1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Class MenuExc1 to show the menus
+ */
 public class MenuExc1 {
 
-
-
+    /**
+     * Prints the PLANETARY SYSTEM: OMEGA 557 Menu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int printMainMenuEX1(String separator) {
         try {
             int user;
@@ -26,7 +33,11 @@ public class MenuExc1 {
         }
     }
 
-
+    /**
+     * Prints the VIEW CELESTIAL BODIES  subMenu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int viewCelestialBody(String separator){
         try{
             int user;
@@ -48,7 +59,11 @@ public class MenuExc1 {
         }
     }
 
-
+    /**
+     * Prints the CREATE CELESTIAL BODY subMenu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int createCelestialBody(String separator){
         try{
             int user;

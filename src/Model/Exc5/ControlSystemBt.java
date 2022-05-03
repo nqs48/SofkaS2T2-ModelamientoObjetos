@@ -1,25 +1,44 @@
 package Model.Exc5;
 
-import Model.Exc4.Ferry;
-
 import java.util.ArrayList;
 
+/**
+ * @author Nestor Quiroga
+ * Class ControlSystemBt to contains the ferry's list
+ */
 public class ControlSystemBt {
+    /**
+     * List of all ferries
+     */
     private ArrayList<FerryBt> ferries;
 
+    /**
+     *Constructor class ControlSystemBt, initialize the ferries list
+     */
     public ControlSystemBt() {
         this.ferries= new ArrayList<>();
     }
 
+    /**
+     * Sets a new ferry to the ferry's list
+     * @param ferry Contains the new ferry to set, type FerryBt
+     */
     public void setFerry(FerryBt ferry) {
         this.ferries.add(ferry);
     }
 
+    /**
+     * Gets the current list of all ferries in the ControlSystemBt
+     * @return returns the list of ferries, type arraylist
+     */
     public ArrayList<FerryBt> getFerries() {
         return ferries;
     }
 
-
+    /**
+     * Method that initializes the library with preloaded data
+     * @param ferryBt Instance of FerryBt to be able to access the methods and attributes
+     */
     public void preLoadedData(FerryBt ferryBt){
         ferryBt.setName("Titanic");
         ferryBt.setCapacity(12);

@@ -1,18 +1,57 @@
 package Model.Exc5;
 
 import java.util.Calendar;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Abstract Class AbsVehicle
+ */
 public abstract class AbsVehicle {
+    /**
+     * Vehicle's id
+     */
     private int id;
+
+    /**
+     * Vehicle's type
+     */
     private String type;
+
+    /**
+     * Vehicle's number passengers
+     */
     private int numberPass;
+
+    /**
+     * is there crew on the vehicle
+     */
     private boolean crew;
+
+    /**
+     * Vehicle's number wheels
+     */
     private int numberWheels;
+
+    /**
+     * Vehicle's registration Date
+     */
     private Calendar registrationDate;
+
+    /**
+     * Vehicle's medium Move
+     */
     private String mediumMove;
 
+    /**
+     * Constructor class Vehicle
+     * @param id value to Vehicle's id
+     * @param type value to Vehicle's type
+     * @param numberPass value to Vehicle's number passengers
+     * @param crew value is there crew on the vehicle
+     * @param numberWheels value to Vehicle's number wheels
+     * @param mediumMove value to Vehicle's medium Move
+     */
     public AbsVehicle(int id, String type, int numberPass, boolean crew, int numberWheels, String mediumMove) {
         this.id = id;
         this.type = type;
@@ -24,43 +63,86 @@ public abstract class AbsVehicle {
         this.mediumMove = mediumMove;
     }
 
+    /**
+     * Empty constructor abstract class AbsVehicle
+     */
     public AbsVehicle() {
     }
 
+    /**
+     * Gets the current vehicle's id
+     * @return returns the vehicle's id type int
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets a new vehicle's id
+     * @param size Contains the new id to set, type int
+     */
     public void setId(int size) {
         this.id = size + 1;
     }
 
+    /**
+     * Gets the current vehicle's type
+     * @return returns the vehicle's type, type string
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     * Gets the current vehicle's number passengers
+     * @return returns the vehicle's number passengers, type int
+     */
     public int getNumberPass() {
         return numberPass;
     }
 
+    /**
+     * Gets the current is there crew on the vehicle
+     * @return returns is there crew on the vehicle, type boolean
+     */
     public boolean isCrew() {
         return crew;
     }
 
+    /**
+     * Gets the current vehicle's number wheels
+     * @return returns the vehicle's number wheels, type int
+     */
     public int getNumberWheels() {
         return numberWheels;
     }
 
+    /**
+     * Gets the current vehicle's registration date
+     * @return returns the vehicle's registration date, type Calendar
+     */
     public Calendar getRegistrationDate() {
         return registrationDate;
     }
 
+    /**
+     * Gets the current vehicle's medium move
+     * @return returns the vehicle's medium move, type string
+     */
     public String getMediumMove() {
         return mediumMove;
     }
 
+    /**
+     * Static method to show information
+     */
     public abstract void showInformation();
 
+    /**
+     * Receives the user information to create the entity
+     * @param type Contains the key to create the entity
+     * @return The new entity created
+     */
     public AbsVehicle requestData(String type) {
         System.out.println("\nEnter the vehicle's number passengers:");
         Scanner numberPass = new Scanner(System.in);

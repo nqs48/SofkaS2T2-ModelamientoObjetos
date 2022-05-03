@@ -3,6 +3,10 @@ package Model;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Class MainMenu to show the menus
+ */
 public class MainMenu {
 
     /**
@@ -25,11 +29,13 @@ public class MainMenu {
             System.out.println("\n\tIncorrect selection data!!\n\nError: "+e);
             return 0;
         }
-
-
     }
 
-
+    /**
+     * Prints the POO: OBJECTS MODELING Main Menu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int printMainMenu(String separator) {
         try {
             int user;

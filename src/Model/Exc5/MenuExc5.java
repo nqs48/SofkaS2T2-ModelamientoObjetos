@@ -1,14 +1,19 @@
 package Model.Exc5;
 
-import Model.Exc1.Sun;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Class MenuExc5 to show the menus
+ */
 public class MenuExc5 {
 
-
-
+    /**
+     * Prints the CONCURRENT FERRY CONTROL: VEHICLES TYPE Menu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int printMainMenuEX5(String separator) {
         try {
             int user;
@@ -28,7 +33,11 @@ public class MenuExc5 {
         }
     }
 
-
+    /**
+     * Prints the VIEW REGISTERED VEHICLES subMenu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int viewVehicles(String separator){
         try{
             int user;
@@ -50,7 +59,11 @@ public class MenuExc5 {
         }
     }
 
-
+    /**
+     * Prints the REGISTER VEHICLES subMenu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int createVehicle(String separator){
         try{
             int user;

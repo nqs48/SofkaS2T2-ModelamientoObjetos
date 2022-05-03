@@ -3,8 +3,17 @@ package Model.Exc4;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Nestor Quiroga
+ * Class MenuExc4 to show the menus
+ */
 public class MenuExc4 {
 
+    /**
+     * Prints the CONCURRENT FERRY CONTROL Menu and receives the user's choice
+     * @param separator String to formatted the information
+     * @return User's choice, type int
+     */
     public int printMainMenuEX4(String separator) {
         try {
             int user;
