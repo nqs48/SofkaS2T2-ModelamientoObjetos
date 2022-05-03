@@ -39,7 +39,7 @@ public class MainMenu {
             System.out.println("| 3. Sort Array Random: (3)");
             System.out.println("| 4. Ferry Control: (4)");
             System.out.println("| 5. Ferry Control: Vehicles types : (5)");
-            System.out.println("| 6. Vector -> Dynamic Array: (6)");
+            System.out.println("| 6. Vector: Dynamic Array: (6)");
             System.out.println("| 7. EXIT APP: (7)" + separator);
             System.out.println("Enter the number of your process:");
             Scanner inputMain = new Scanner(System.in);
